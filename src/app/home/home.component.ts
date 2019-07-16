@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
   logout(){
     this.oauthService.logOut();
-    window.location.href= 'https://YOUR_SERVER/adfs/ls/?wa=wsignoutcleanup1.0';
+    window.location.href= 'https://login.microsoftonline.com/2918b24e-c23f-4746-bf73-673fec71f96b/adfs/ls/?wa=wsignoutcleanup1.0';
   }
 
 }
