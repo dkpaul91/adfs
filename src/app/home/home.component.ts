@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
     private service: MyService) { }
 
   ngOnInit() {
+    debugger;
     this.token = this.oauthService.getAccessToken();
     this.idtoken = this.oauthService.getIdToken();
   }
@@ -39,7 +40,7 @@ export class HomeComponent implements OnInit {
 
   logout(){
     this.oauthService.logOut();
-    window.location.href= 'https://login.microsoftonline.com/2918b24e-c23f-4746-bf73-673fec71f96b/adfs/ls/?wa=wsignoutcleanup1.0';
+    window.location.href= 'https://login.microsoftonline.com/2918b24e-c23f-4746-bf73-673fec71f96b/oauth2/v2.0/logout';
   }
 
 }
